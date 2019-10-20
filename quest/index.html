@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="quest.css">
     <title>Quest Page</title>
 </head>
+
 <body>
     <header>
         <h1 id="quest-title"></h1>
         <img src="../assets/GB-logo.png" alt="Ghostbusters Logo">
-        <h1>Ghostbusters</h1>
         <div class="profile">
             <img id="avatar">
             <span id="name"></span>
@@ -23,30 +23,37 @@
     </header>
 
     <main> 
-            <h2 id="title"></h2>
-            <p>
-                <img id="image">
-                <audio id="audio" autoplay></audio>
-            </p>
-            <p id="description"></p>
-            <form id="choice-form">
-                <p id="choices"></p>
-                <button src="../assets/save-ny-btn.png"></button>
-            </form>
+        <div class="quest-grid-container">
+                
+            <div class="grid-item" id="ghost-image">
+                <p width="250px"><img id="image"></p>
+            </div>
+            <div class="grid-item" id="quest-description">
+                <h2 id="title"></h2>
+                <p id="description"></p>
+            </div>
+            <div class="grid-item" id="form-div">
+                <form id="choice-form">
+                    <p id="choices"></p>
+                    <button><img src="../assets/GB-button.png"/></button>
+                </form>
+            </div>
+            <div class="grid-item" id="hidden-results">
             <section id="result" class="hidden">
                 <p id="result-description"></p>
                 <a href="../map">Back to Map</a>
             </section>
+            </div>
+        </div>
     </main>
        
+    
     <footer>
-            <cite>
-                Icons designed by Libby Hamlin
-            </cite>
-        </footer>
-    
-    
+        <cite>
+            Icons designed by Libby Hamlin
+        </cite>
+    </footer>
+
     <script type="module" src="./quest.js"></script>
 </body>
-
 </html>

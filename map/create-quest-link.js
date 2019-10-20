@@ -10,6 +10,8 @@ function createQuestLink(quest) {
     link.style.top = quest.map.top;
     link.style.left = quest.map.left;
     link.textContent = quest.title;
+    link.img = '../assets/quests/' + quest.img;
+    
 
     return link;
 }

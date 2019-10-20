@@ -45,7 +45,6 @@ choiceForm.addEventListener('submit', function(event) {
     scoreQuest(choice, quest.id, user);
     saveUser(user);
 
-    // audio.src = '../assets/quests/' + quest.action;
     choiceForm.classList.add('hidden');
     result.classList.remove('hidden');
     resultDescription.textContent = choice.result;

@@ -3,9 +3,10 @@
   background-image: url("../assets/map.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 90vw;
-  height: calc(90vw * 642 / 900);
+  width: 731px;
+  height: 500px;
   margin: auto;
+  margin-top: 2%;
 }
 
 .quest {
@@ -21,4 +22,12 @@
 
 .quest.completed:after {
   content: ' ✔';
+}
+
+main {
+  text-align: right;
+}
+
+h2 {
+  padding-right: 9%;
 }

@@ -18,7 +18,7 @@ const nav = document.getElementById('quests');
 for (let i = 0; i < quests.length; i++) {
     const quest = quests[i];
     let questDisplay = null;
-    if (user.completed[quest.id]) {
+    if (user.completed[quests.id]) {
         questDisplay = createCompletedQuest(quest);
     }
     else {
