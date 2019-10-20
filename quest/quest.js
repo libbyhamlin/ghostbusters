@@ -20,7 +20,7 @@ const title = document.getElementById('title');
 const image = document.getElementById('image');
 const description = document.getElementById('description');
 const choiceForm = document.getElementById('choice-form');
-const choices = document.getElementById('choice');
+const choices = document.getElementById('choices');
 const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 
@@ -29,7 +29,7 @@ image.src = '../assets/quests/' + quest.image;
 description.textContent = quest.description;
 
 for (let index = 0; index < quest.choices.length; index++) {
-    const choice = quest.choice[index];
+    const choice = quest.choices[index];
     const choiceDOM = createChoice(choice);
     choices.appendChild(choiceDOM);
 }

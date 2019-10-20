@@ -8,6 +8,7 @@ const librarian = {
     image: 'librarian.png',
 
     description:'Disturbances are being reported at the New York City Public Library. Alice, one of the librarians, just fainted after seeing what she swears was a ghost and you\'ve been called in to investigate. You suspect the entity is a Free-Roaming, Vaporous, Full Torso Apparition. You make your way down to the basement where you see a translucent figure with no feet floating amid the stacks. She appears to be reading. How do you proceed?',
+    
     choices: [{
         id: 'negotiate',
         description: 'Try to talk to her',

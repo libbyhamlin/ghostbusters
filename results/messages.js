@@ -4,7 +4,7 @@ export const aliveGhostsMessages = {
     rich: 'you saved the city! You can expect the mayor to call you on a regular basis.'
 };
 
-export const deadGhostsMessage = {
+export const deadGhostsMessages = {
     poor: 'you die and no-one remembers you',
     modest: 'the city redisigns some manhole covers in your honor',
     rich: 'the bad news is, you\'re dead. The good news is, you\'re a ghost!'
