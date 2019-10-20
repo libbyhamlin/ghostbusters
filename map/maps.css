@@ -1,0 +1,100 @@
+body {
+    /* border: 5px solid red;
+      border-radius: 25px; */
+    width: 1280px;
+    height: 100vh;
+    margin: auto;
+    background-color: black;
+  }
+  
+  header {
+    display: grid;
+    border: 5px solid red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .quest {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  
+  main {
+    color: white;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  nav img {
+    width: 10%;
+  }
+  
+  .over-img-lib {
+    position: absolute;
+    top: 34%;
+    left: 23%;
+  }
+  
+  #lib-text {
+    position: absolute;
+    top: 44%;
+    left: 24%;
+    color: white;
+  }
+  
+  .over-img-slimer {
+    position: absolute;
+    top: 18%;
+    left: 33%;
+  }
+  
+  #slimer-text {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    color: white;
+  }
+  .over-img-puft {
+    position: absolute;
+    top: 14%;
+    left: 75%;
+  }
+  
+  #puft-text {
+    position: absolute;
+    top: 23%;
+    left: 77%;
+    color: white;
+  }
+  
+  button {
+    margin: 20px 60px 40px;
+    background: white;
+    color: black;
+    border-radius: 17px;
+    padding: 10px;
+  }
+  
+  .profile-stat-label {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }

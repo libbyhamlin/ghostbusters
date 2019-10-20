@@ -1,0 +1,61 @@
+body {
+    /* border: 5px solid red;
+    border-radius: 25px; */
+    width: 1280px;
+    height: 100vh;
+    margin: auto;
+    background-color: black;
+  }
+  
+  header {
+    display: grid;
+    border: 5px solid red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 40px;
+  }
+  
+  main {
+    border: 5px solid red;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    background-color: black;
+  }
+  
+  header h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  form {
+    display: grid;
+    color: white;
+  }
+  
+  p:first-child {
+    padding-bottom: 20px;
+  }
+  
+  legend {
+    padding-top: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    display: none;
+  }
+  
+  button {
+    margin: 20px 60px 40px;
+    background: white;
+    color: black;
+    border-radius: 17px;
+    padding: 10px;
+    
+  }
