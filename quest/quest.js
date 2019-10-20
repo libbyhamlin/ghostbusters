@@ -1,9 +1,7 @@
 import loadProfile from '../common/load-profile.js';
-// import { getUser, saveUser } from '../data/api.js';
 import quests from '../data/quest-data.js';
 import createChoice from './create-choice.js';
 import findById from '../common/find-by-id';
-// import scoreQuest from './score-quest.js';
 
 loadProfile();
 
@@ -43,9 +41,9 @@ choiceForm.addEventListener('submit', function(event) {
     const choiceId = formData.get('choice');
     const choice = findById(quest.choices, choiceId);
 
-    // const user = getUser();
-    // scoreQuest(choice, quest.id, user);
-    // saveUser(user);
+    const user = getUser();
+    scoreQuest(choice, quest.id, user);
+    saveUser(user);
 
     audio.src = '../assets/quests/' + quest.action;
     choiceForm.classList.add('hidden');
