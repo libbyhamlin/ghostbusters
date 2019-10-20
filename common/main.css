@@ -1,59 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Oswald');
+
 body {
-    width: 900px;
-    height: 100%;
-    margin: auto;
-    background-color: black;
-  }
-  
-header {
-    display: grid;
-    border: 5px solid red;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    margin-top: 40px;
-  }
-  
-main {
-    border: 5px solid red;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    padding-top: 15px;
-    background-color: black;
-  }
-  
-form {
-    display: grid;
-    color: white;
-  }
-  
-p:first-child {
-    padding-bottom: 20px;
-  }
-  
-  
-input {
-    padding: 10px;
+    font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    background: wheat;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Oswald';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
     display: none;
-  }
-  
-button {
-    margin: 20px 60px 40px;
+}
+
+header, main {
+    padding: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: white;
-    color: black;
-    border-radius: 17px;
-    padding: 10px;
-    
-  }
+    border-bottom: 1px solid orange;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 2;
+}
 
 footer {
+    position: fixed;
     bottom: 0;
     left: 0; right: 0;
     height: 65px;
-    color: white;
+    background: lightgrey;
     text-align: center;
     padding-top: 25px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+
+input, fieldset, button {
+    border: 1px solid orange;
+}
+
+button {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
