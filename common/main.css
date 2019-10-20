@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .hidden {
