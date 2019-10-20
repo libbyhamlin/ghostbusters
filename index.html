@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Quest</title>
-    <link rel="stylesheet" href="common/main.css">
-    <link rel="stylesheet" href="home/home.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Time To Save New York!</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="./common/main.css" />
+    <link rel="stylesheet" href="./home/home.css">
+  </head>
+  <body>
     <header>
-        <img src="ghost busters logo..." alt="Ghost Busters logo">
-        <h1>Adventure Game</h1>
+      <img src="./assets/GB-logo.png" alt="Ghostbusters Logo">
+      <h1>Time To Save New York!</h1>
     </header>
-    
-    <main> 
 
-        <form id="user-sign-up">
-            <fieldset>
-                <legend>Choose Your Buster:</legend>
-                <p id="avatars">
-                    <label>
-                        <input type="radio" name="race" required value="peter">
-                        <img src="...">
-                        Peter
-                    </label>
-                    <label>
-                        <input type="radio" name="race" required value="egon">
-                        <img src="...">
-                        Egon
-                    </label>
-                    <label>
-                        <input type="radio" name="race" required value="ray">
-                        <img src="...">
-                        Ray
-                    </label>
-                    
-                </p>
-            </fieldset>
-            <button>Save New York!</button>
-        </form>
-    </main>
+    <main>
+      <h2>
+        Choose a buster, bust some ghosts.
+      </h2>
 
-    <footer>
-        <cite>
-            Icons designed by Libby Hamlin
-        </cite>
+      <form id="user-sign-up">
+          <p class="text-prompt">
+              <label for="name">Your Favorite Supporting Character:</label>
+              <input id="name" name="name" required>
+          </p>
+          <fieldset>
+              <legend>Pick Your Player:</legend>
+              <p id="avatars">
+                  <label>
+                      <input type="radio" name="actor" required value="ray">
+                      <img src="./assets/avatars/ray.png">
+                      Ray
+                  </label>
+                  <label>
+                      <input type="radio" name="actor" required value="peter">
+                      <img src="./assets/avatars/peter.png">
+                      Peter
+                  </label>
+                  <label>
+                      <input type="radio" name="actor" required value="egon">
+                      <img src="./assets/avatars/egon.png">
+                      Egon
+                  </label>
+              </p>
+          </fieldset>
+          <button>To Ecto-1</button>
+      </form>
+  </main>  
+
+      <footer>
+      <cite>
+        Icons designed by Libby Hamlin
+      </cite>
     </footer>
 
-    <script type="module" src="home/home.js"></script>
-</body>
+    <script type="module" src="./home/home.js"></script>
+  </body>
 </html>

@@ -4,36 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="../common/main.css" />
+    <link rel="stylesheet" href="../common/profile.css">
     <link rel="stylesheet" href="../map/maps.css" />
-    <!-- <link rel="stylesheet" href="../main.css" /> -->
-    <title>Quest Page</title>
   </head>
+
   <body>
     <header>
+      <img src="../assets/GB-logo.png" alt="Ghostbusters logo">
       <h1>Time To Save New York!</h1>
+      <div class="profile">
+          <img id="avatar" src="" />
+          <span id="name"></span>
+          <span class="profile-stat-label">hp:</span>
+          <span id="hp"></span>
+          <span class="profile-stat-label">ghosts:</span>
+          <span id="ghosts"></span>
+        </div>
     </header>
-    <section = class="map-img">
-        <img src="../assets/map.png">
+    <section class="map-img">
     </section>
 
     <main>
       <h2>
-        Oh no! The city of New York is under attack again! Select a ghost to
-        fight!
+        Select a ghost to fight!
       </h2>
 
       <nav id="quests">
-        <a class="quest"
-          href="quest.html?id=librarian">
-        <img src="../assets/quests/quest-librarian.png" class="over-img-lib"/><p id="lib-text">Defeat the librarian!</p></a>
-       
-        <a class="quest" href="quest.html?id=slimer">
-        <img src="../assets/quests/quest-slimer.png" class="over-img-slimer"/><p id="slimer-text">Defeat Slimer!</p></a>
+        
+        <!-- <a class="quest" href="quest.html?id=librarian" style="top: 57%;left: 67%;">A Ghostly Reader</a>
+        
+        <a class="quest" href="quest.html?id=monsters" style="top: 89%;left: 44%;">Slimer's Surprise</a>
       
-        <a class="quest" href="quest.html?id=puft-battle">
-        <img src="../assets/quests/quest-puft.png" class="over-img-puft"/><p id="puft-text">Defeat Stay Puft!</p></a>
-        <span class="quest completed" style="top: 31%;left: 5%;">The City is Saved</span>
+        <a class="quest" href="quest.html?id=marshmallow" style="top: 31%;left: 5%;">The Battle of Stay Puft!</a>     -->
       </nav>
     </main>
 
@@ -41,14 +44,6 @@
       <cite>
         Icons designed by Libby Hamlin
       </cite>
-      <div class="profile">
-        <img id="avatar" src="" />
-        <span id="name"></span>
-        <span class="profile-stat-label">HP:</span>
-        <span id="hp"></span>
-        <span class="profile-stat-label">Ghosts:</span>
-        <span id="ghosts"></span>
-      </div>
     </footer>
 
     <script type="module" src="maps.js"></script>

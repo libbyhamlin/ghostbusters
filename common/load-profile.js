@@ -15,7 +15,7 @@ function loadProfile() {
 
 
     name.textContent = user.name;
-    avatar.src = 'assets/avatars/' + user.actor + '.png';
+    avatar.src = '../assets/avatars/' + user.actor + '.png';
     ghosts.textContent = user.ghosts;
 
     if (isDead(user)) {

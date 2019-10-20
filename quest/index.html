@@ -5,48 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../common/reset.css">
-    <link rel="stylesheet" href="../common/style.css">
+    <link rel="stylesheet" href="../common/main.css">
     <link rel="stylesheet" href="quest.css">
     <title>Quest Page</title>
 </head>
 <body>
     <header>
         <h1 id="quest-title"></h1>
+        <img src="../assets/GB-logo.png" alt="Ghostbusters Logo">
+        <h1>Ghostbusters</h1>
         <div class="profile">
-            <img id="avatar" src="">
+            <img id="avatar">
             <span id="name"></span>
-            <span class="profile-stat-label">HP:</span>
-            <span id="hp"></span>
-            <span class="profile-stat-label">Ghosts:</span>
-            <span id="ghosts"></span>
+            hp:<span id="hp"></span>
+            ghosts: <span id="ghosts"></span>
         </div>
     </header>
 
-
-
     <main> 
-        <p>
-            <img id="image">
-            <audio id="audio" autoplay></audio>
-        </p>
-        <p id="description"></p>
-        <form id="choice-form">
-            <p id="choices"></p>
-            <button src="..." id="choose=button" ></button>
-        </form>
-
-        <section id="result" class="hidden">
-            <p id="result-description"></p>
-            <a href="../map">Back to Firehouse!</a>
-        </section>
+            <h2 id="title"></h2>
+            <p>
+                <img id="image">
+                <audio id="audio" autoplay></audio>
+            </p>
+            <p id="description"></p>
+            <form id="choice-form">
+                <p id="choices"></p>
+                <button src="../assets/save-ny-btn.png"></button>
+            </form>
+            <section id="result" class="hidden">
+                <p id="result-description"></p>
+                <a href="../map">Back to Map</a>
+            </section>
     </main>
-
-
-
-
-
-
+       
     <footer>
             <cite>
                 Icons designed by Libby Hamlin
@@ -54,7 +46,7 @@
         </footer>
     
     
-    <script type="module" src="app.js"></script>
+    <script type="module" src="./quest.js"></script>
 </body>
 
 </html>
